@@ -10,5 +10,12 @@
         "cordova-plugin-whitelist@1.2.2",
         "cordova-plugin-splashscreen@3.2.2",
         "cordova-custom-config@2.0.3"
-    ]
+    ],
+    "title-ja": "リマインダー",
+    "title-en": "",
+    "description-ja": "高瀬さんとの共同開発",
+    "description-en": "",
+    "category": "User Template",
+    "platform": [],
+    "name": "generated-1495381435-590f15aa013eb08258d8710e"
 }
