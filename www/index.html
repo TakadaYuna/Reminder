@@ -16,40 +16,30 @@
 
   <script>
     ons.bootstrap()
-      .controller('AppController', function() {
+      .controller('AppController', function($scope){
+          $scope.today=new Date();
       });
     ons.ready(function() {
-        console.log("Onsen UI is ready!");
-    });
-  </script>
+        
+           });
+  </script>  
 </head>
+
 <body>
   <ons-page ng-controller="AppController as app">
     <ons-toolbar>
-      <div class="center">My App - {{app.title}}</div>
+      <div class="center" id="kyou">{{today}}</div>
     </ons-toolbar>
 
     <ons-tabbar position="auto">
-      <ons-tab page="page1.html" label="Page 1" icon="square" active></ons-tab>
-      <ons-tab page="page2.html" label="Page 2" icon="square"></ons-tab>
+      <ons-tab page="month.html" label="月" icon="fa-calendar" active></ons-tab>
+      <ons-tab page="week.html" label="週" icon="fa-coffee"></ons-tab>
+      <ons-tab page="day.html" label="日" icon="fa-clock-o"></ons-tab>
     </ons-tabbar>
   </ons-page>
 
-  <ons-template id="page1.html">
-    <ons-page ons-show="app.title = 'Page 1'">
-      <div class="content" style="text-align: center">
-        <p>Page 1 content</p>
-      </div>
-    </ons-page>
-  </ons-template>
+ 
 
-  <ons-template id="page2.html">
-    <ons-page ons-show="app.title = 'Page 2'">
-      <div class="content" style="text-align: center">
-        <p>Page 2 content</p>
-      </div>
-    </ons-page>
-  </ons-template>
-
+  
 </body>
 </html>
